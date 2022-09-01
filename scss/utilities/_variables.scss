@@ -9,10 +9,36 @@ $wisteria      : #927bc1;
 $rosy-pink     : #e4757a;
 $soft-green    : #63cc82;
 $basket-ball   : #fd7856;
+$thistle       : #deb2ee;
+$blue-lagoon   : #7ee6fd;
+$seafoam       : #88d9a0;
+$blue-koi      : #4da2bb;
+$sea-pink      : #ec9fa3;
+$blush         : #fd9f85;
+$light-teal    : #80e8d1;
+
+// Color Map
+
+$theme-color: (
+    1   : $wisteria,
+    2   : $basket-ball,
+    3   : $thistle,
+    4   : $blue-lagoon,
+    5   : $seafoam,
+    6   : $blue-koi,
+    7   : $sea-pink,
+    8   : $blush,
+    9   : $rosy-pink,
+    10  : $soft-green,
+    11  : $blue-diamond,
+    12  : $light-teal,
+);
 
 // Fonts
 
 $main-font     : 'Lato', sans-serif;
+$font-light    : 300;
+$font-bold     : 700;
 
 // Breakpoint
 

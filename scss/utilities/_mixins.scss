@@ -5,3 +5,30 @@
         @content;
     }
 }
+
+// Theme
+
+@mixin theme-colors($map) {
+    @for $i from 1 through 12 {
+        .theme.col-#{$i} {
+            background-color: map-get($map, $i);
+        }
+    }
+}
+
+// Images
+
+@mixin img-base {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin img-styling($width: null, $height: null, $margin-top: null) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $width;
+    max-height: $height;
+    margin-top: $margin-top;
+}
