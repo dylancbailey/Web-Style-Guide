@@ -1,4 +1,4 @@
-// Media Query
+// Media Queries
 
 @mixin desktop {
     @media (min-width: #{$screen-md-min}) {
@@ -6,11 +6,20 @@
     }
 }
 
+@mixin flexy {
+    @for $i from 1 through 12 {
+        $percent: calc(100% / 12);
+        .col-#{$i} {
+            flex-basis: ($i * $percent);
+        }
+    }
+}
+
 // Theme
 
 @mixin theme-colors($map) {
     @for $i from 1 through 12 {
-        .theme.col-#{$i} {
+        &.col-#{$i} {
             background-color: map-get($map, $i);
         }
     }
