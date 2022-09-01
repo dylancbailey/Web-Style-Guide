@@ -5,7 +5,7 @@
 .btn {
     margin-top: 15px;
     width: 100%;
-    color: #fff;
+    color: $ceramic;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
@@ -13,21 +13,21 @@
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $blue-diamond;
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $rosy-pink;
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $wisteria;
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $soft-green;
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $basket-ball;
   }

@@ -1,0 +1,7 @@
+// Media Query
+
+@mixin desktop {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
