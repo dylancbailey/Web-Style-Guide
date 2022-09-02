@@ -3,31 +3,31 @@
 /* ============================================= */
 
 .btn {
-    margin-top: 15px;
-    width: 100%;
-    color: $ceramic;
-    border: none;
-    padding: 10px 0;
-    text-transform: uppercase;
-    border-radius: 5px;
-  }
+  @include btn-styling;
+  transition: hover-transition(background-color);
+}
   
-  .default {
-    background-color: $blue-diamond;
-  }
-  
-  .error {
-    background-color: $rosy-pink;
-  }
-  
-  .info {
-    background-color: $wisteria;
-  }
-  
-  .success {
-    background-color: $soft-green;
-  }
-  
-  .warning {
-    background-color: $basket-ball;
-  }
+.default {
+  background-color: $blue-diamond;
+  @include hover($blue-diamond);
+}
+
+.error {
+  background-color: $rosy-pink;
+  @include hover($rosy-pink);
+}
+
+.info {
+  background-color: $wisteria;
+  @include hover($wisteria);
+}
+
+.success {
+  background-color: $soft-green;
+  @include hover($soft-green);
+}
+
+.warning {
+  background-color: $basket-ball;
+  @include hover($basket-ball);
+}

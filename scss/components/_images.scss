@@ -1,17 +1,20 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
+.img {
 
-.img-avatar {
+  &-avatar {
     @include img-styling($width: 100%, $height: 100%, $margin-top: 10px);
   }
-  
-  .img-frame {
+
+  &-frame {
     @include img-styling($width: 100%, $margin-top: 10px);
     padding: 13px;
     border: 1px solid $ghost;
   }
-  
-  .img-logo {
+
+  &-logo {
     @include img-styling;
   }
+
+}

@@ -3,55 +3,51 @@
 /* ============================================= */
 
 @include desktop {
- .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .container {
+    @include element-centered();
+    max-width: $max-w;
   }
-  
+
   .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include element-centered;
   }
-  
+
   .row {
     flex-direction: row;
   }
-  
+
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center;
   }
-  
+
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-  
+
   // 12 columns with appropriate spacing
   @include flexy();
-  
+
   .nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    &-link {
+      flex-basis: 100px;
+    }
   }
-  
-  .nav-link {
-    flex-basis: 100px;
-  }
-  
+
   .btn {
     padding: 10px 30px;
   }
-  
+
   .btn + .btn {
     margin-left: 10px;
   }
-  
+
   .logo {
     margin-left: initial;
     margin-right: initial;

@@ -34,12 +34,14 @@ $theme-color: (
     12  : $light-teal,
 );
 
-// Fonts
+// Fonts and Line Height
 
 $main-font     : 'Lato', sans-serif;
 $font-light    : 300;
 $font-bold     : 700;
+$base-l-height : 1.45em;
 
-// Breakpoint
+// Breakpoints
 
 $screen-md-min : 768px;
+$max-w: 1400px;

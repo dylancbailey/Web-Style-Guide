@@ -1,3 +1,9 @@
+// Functions
+
+@function hover-transition($property, $time: .2s, $ease: ease-in-out) {
+    @return $property $time $ease;
+}
+
 // Media Queries
 
 @mixin desktop {
@@ -25,19 +31,38 @@
     }
 }
 
-// Images
+// Centered
 
-@mixin img-base {
-    display: block;
+@mixin element-centered($disp: block) {
+    display: $disp;
     margin-left: auto;
     margin-right: auto;
 }
 
+// Images 
+
 @mixin img-styling($width: null, $height: null, $margin-top: null) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include element-centered;
     max-width: $width;
     max-height: $height;
     margin-top: $margin-top;
 }
+
+// Buttons
+
+@mixin btn-styling {
+    margin-top: 15px;
+    width: 100%;
+    color: $ceramic;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+@mixin hover($color, $percent: 15%) {
+    &:hover {
+        background-color: lighten($color, $percent);
+    }
+}
+
