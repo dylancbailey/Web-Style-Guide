@@ -16,12 +16,12 @@
     @for $i from 1 through 12 {
         $percent: calc(100% / 12);
         .col-#{$i} {
-            flex-basis: ($i * $percent);
+            flex-basis: (#{$i} / $percent);
         }
     }
 }
 
-// Theme
+// Themes
 
 @mixin theme-colors($map) {
     @for $i from 1 through 12 {
